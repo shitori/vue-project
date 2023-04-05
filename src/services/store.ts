@@ -6,6 +6,9 @@ export const storeSocket = reactive({
     percent: 0,
     message: '...',
     cible: 'UNKNOW',
+    setMessage(message){
+        this.message = message
+    },
     setFromJson(json) {
         this.percent = json.percent
         this.message = json.message

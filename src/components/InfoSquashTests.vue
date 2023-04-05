@@ -58,7 +58,7 @@
 <script>
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Pie } from 'vue-chartjs'
-import { options } from '../config/chartConfig.js'
+import { options } from '../config/chartConfig'
 import { storeGraph as store } from '../services/store'
 import fakeData from '../data/fakeDataInfosSquashTest.json'
 
