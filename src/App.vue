@@ -3,7 +3,6 @@ import FormUpdateSquashTests from './components/FormUpdateSquashTests.vue'
 import LoadingScreenUpdateSquashTests from './components/LoadingScreenUpdateSquashTests.vue'
 import ResultUpdateSquashTests from './components/ResultUpdateSquashTests.vue'
 import InfoSquashTests from './components/InfoSquashTests.vue'
-import Pie from './components/Pie.vue'
 import SocketioService from './services/socket'
 import { storeVisibility as store } from './services/store'
 export default {
@@ -18,7 +17,6 @@ export default {
     LoadingScreenUpdateSquashTests,
     ResultUpdateSquashTests,
     InfoSquashTests,
-    Pie
   },
   created() {
     SocketioService.setupSocketConnection()
@@ -56,7 +54,7 @@ export default {
 
     <ResultUpdateSquashTests :class="{ 'is-hidden': !store.resultUST }"/>
 
-    <Pie/>
+    <InfoSquashTests/>
 
   </main>
 </template>
