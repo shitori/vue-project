@@ -12,7 +12,7 @@ export default {
         removeHTMLtagsAndShorter(html) {
             const div = document.createElement("div")
             div.innerHTML = html
-            let text = div.textContent || div.innerText || ""
+            const text = div.textContent || div.innerText || ""
 
             return text.substring(0, 174)
         },
