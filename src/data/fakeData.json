@@ -1,146 +1,146 @@
 [
-  {
-    "message": "Test 757249 mise à jour avec le status : FAILURE",
-    "id": 757249,
-    "status": "FAILURE",
-    "testName": "Un agent passe en pause légale en fin de clôture si l'option est cochée dans son profil coté selfcare",
-    "realId": 274270,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757250 mise à jour avec le status : SUCCESS",
-    "id": 757250,
-    "status": "SUCCESS",
-    "testName": "Un superviseur voit un agent en pause légale ainsi que son timer de pause",
-    "realId": 274281,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757235 mise à jour avec le status : FAILURE",
-    "id": 757235,
-    "status": "FAILURE",
-    "testName": "Mettre en pause un appel entrant voix",
-    "realId": 268754,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null, null, null, null]
-  },
-  {
-    "message": "Test 757237 mise à jour avec le status : SUCCESS",
-    "id": 757237,
-    "status": "SUCCESS",
-    "testName": "Un agent peut choisir le CLI à afficher au client",
-    "realId": 268578,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null, null, null, null]
-  },
-  {
-    "message": "Test 757238 mise à jour avec le status : SUCCESS",
-    "id": 757238,
-    "status": "SUCCESS",
-    "testName": "Un agent effectuant un appel sortant avec un CLI différent change son phone ANI",
-    "realId": 268613,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null]
-  },
-  {
-    "message": "Test 757190 mise à jour avec le status : SUCCESS",
-    "id": 757190,
-    "status": "SUCCESS",
-    "testName": "Refuser un appel entrant voix via le bandeau de l'agent",
-    "realId": 268801,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null]
-  },
-  {
-    "message": "Test 757192 mise à jour avec le status : FAILURE",
-    "id": 757192,
-    "status": "FAILURE",
-    "testName": "Répondre à un appel entrant voix",
-    "realId": 268803,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null]
-  },
-  {
-    "message": "Test 757231 mise à jour avec le status : FAILURE",
-    "id": 757231,
-    "status": "FAILURE",
-    "testName": "[Appel entrant] Enregistrement lancé automatiquement et impossible de l'arrêter pour la conf \"Enregistrement de toutes les communications sans contrôle agent\"",
-    "realId": 268409,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757289 mise à jour avec le status : FAILURE",
-    "id": 757289,
-    "status": "FAILURE",
-    "testName": "La barre de progression doit être affichée si le temps de conversation est activé pour la file d'attente",
-    "realId": 268422,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null]
-  },
-  {
-    "message": "Test 757290 mise à jour avec le status : FAILURE",
-    "id": 757290,
-    "status": "FAILURE",
-    "testName": "La barre de progression doit être affichée si le temps de conversation est activé pour la file d'attente",
-    "realId": 268791,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null]
-  },
-  {
-    "message": "Test 757199 mise à jour avec le status : FAILURE",
-    "id": 757199,
-    "status": "FAILURE",
-    "testName": "Visibilité du compteur de clôture visible",
-    "realId": 268750,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757276 mise à jour avec le status : SUCCESS",
-    "id": 757276,
-    "status": "SUCCESS",
-    "testName": "L'activation du chuchotement rend les autres modes de supervision indisponibles",
-    "realId": 271152,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757277 mise à jour avec le status : SUCCESS",
-    "id": 757277,
-    "status": "SUCCESS",
-    "testName": "La désactivation de chuchotement en cours se fait en cliquant sur bouton de chuchotement",
-    "realId": 271151,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null, null, null]
-  },
-  {
-    "message": "Test 757281 mise à jour avec le status : SUCCESS",
-    "id": 757281,
-    "status": "SUCCESS",
-    "testName": "L'activation de l'écoute discrète rend les autres modes de supervision indisponibles",
-    "realId": 271171,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null]
-  },
-  {
-    "message": "Test 757282 mise à jour avec le status : SUCCESS",
-    "id": 757282,
-    "status": "SUCCESS",
-    "testName": "La désactivation de l'écoute discrète en cours se fait en cliquant sur bouton de chuchotement",
-    "realId": 271170,
-    "extraInfo": "<p>Tous s'est bien passé</p>",
-    "returnStepInfo": [null, null, null, null, null]
-  },
-  {
-    "message": "Test 757216 mise à jour avec le status : FAILURE",
-    "id": 757216,
-    "status": "FAILURE",
-    "testName": "Vérifier l'évolution des statistiques des appels entrants",
-    "realId": 271650,
-    "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
-    "returnStepInfo": [null, null, null]
-  }
+    {
+        "message": "Test 757249 mise à jour avec le status : FAILURE",
+        "id": 757249,
+        "status": "FAILURE",
+        "testName": "Un agent passe en pause légale en fin de clôture si l'option est cochée dans son profil coté selfcare",
+        "realId": 274270,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757250 mise à jour avec le status : SUCCESS",
+        "id": 757250,
+        "status": "SUCCESS",
+        "testName": "Un superviseur voit un agent en pause légale ainsi que son timer de pause",
+        "realId": 274281,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757235 mise à jour avec le status : FAILURE",
+        "id": 757235,
+        "status": "FAILURE",
+        "testName": "Mettre en pause un appel entrant voix",
+        "realId": 268754,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null, null, null, null]
+    },
+    {
+        "message": "Test 757237 mise à jour avec le status : SUCCESS",
+        "id": 757237,
+        "status": "SUCCESS",
+        "testName": "Un agent peut choisir le CLI à afficher au client",
+        "realId": 268578,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null, null, null, null]
+    },
+    {
+        "message": "Test 757238 mise à jour avec le status : SUCCESS",
+        "id": 757238,
+        "status": "SUCCESS",
+        "testName": "Un agent effectuant un appel sortant avec un CLI différent change son phone ANI",
+        "realId": 268613,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null]
+    },
+    {
+        "message": "Test 757190 mise à jour avec le status : SUCCESS",
+        "id": 757190,
+        "status": "SUCCESS",
+        "testName": "Refuser un appel entrant voix via le bandeau de l'agent",
+        "realId": 268801,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null]
+    },
+    {
+        "message": "Test 757192 mise à jour avec le status : FAILURE",
+        "id": 757192,
+        "status": "FAILURE",
+        "testName": "Répondre à un appel entrant voix",
+        "realId": 268803,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null]
+    },
+    {
+        "message": "Test 757231 mise à jour avec le status : FAILURE",
+        "id": 757231,
+        "status": "FAILURE",
+        "testName": "[Appel entrant] Enregistrement lancé automatiquement et impossible de l'arrêter pour la conf \"Enregistrement de toutes les communications sans contrôle agent\"",
+        "realId": 268409,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757289 mise à jour avec le status : FAILURE",
+        "id": 757289,
+        "status": "FAILURE",
+        "testName": "La barre de progression doit être affichée si le temps de conversation est activé pour la file d'attente",
+        "realId": 268422,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null]
+    },
+    {
+        "message": "Test 757290 mise à jour avec le status : FAILURE",
+        "id": 757290,
+        "status": "FAILURE",
+        "testName": "La barre de progression doit être affichée si le temps de conversation est activé pour la file d'attente",
+        "realId": 268791,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null]
+    },
+    {
+        "message": "Test 757199 mise à jour avec le status : FAILURE",
+        "id": 757199,
+        "status": "FAILURE",
+        "testName": "Visibilité du compteur de clôture visible",
+        "realId": 268750,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757276 mise à jour avec le status : SUCCESS",
+        "id": 757276,
+        "status": "SUCCESS",
+        "testName": "L'activation du chuchotement rend les autres modes de supervision indisponibles",
+        "realId": 271152,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757277 mise à jour avec le status : SUCCESS",
+        "id": 757277,
+        "status": "SUCCESS",
+        "testName": "La désactivation de chuchotement en cours se fait en cliquant sur bouton de chuchotement",
+        "realId": 271151,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null, null, null]
+    },
+    {
+        "message": "Test 757281 mise à jour avec le status : SUCCESS",
+        "id": 757281,
+        "status": "SUCCESS",
+        "testName": "L'activation de l'écoute discrète rend les autres modes de supervision indisponibles",
+        "realId": 271171,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null]
+    },
+    {
+        "message": "Test 757282 mise à jour avec le status : SUCCESS",
+        "id": 757282,
+        "status": "SUCCESS",
+        "testName": "La désactivation de l'écoute discrète en cours se fait en cliquant sur bouton de chuchotement",
+        "realId": 271170,
+        "extraInfo": "<p>Tous s'est bien passé</p>",
+        "returnStepInfo": [null, null, null, null, null]
+    },
+    {
+        "message": "Test 757216 mise à jour avec le status : FAILURE",
+        "id": 757216,
+        "status": "FAILURE",
+        "testName": "Vérifier l'évolution des statistiques des appels entrants",
+        "realId": 271650,
+        "extraInfo": "<p>Message error : Test Sel incoming call ➡️ Test ➡️ Get Text : StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\r\n  (Session info: headless chrome=109.0.5414.120)\r\nStacktrace:\r\nBacktrace:\r\n\t(No symbol) [0x00DB6643]\r\n\t(No symbol) [0x00D4BE21]\r\n\t(No symbol) [0x00C4DA9D]\r\n\t(No symbol) [0x00C509E4]\r\n\t(No symbol) [0x00C508AD]\r\n\t(No symbol) [0x00C50B30]\r\n\t(No symbol) [0x00C7C7C0]\r\n\t(No symbol) [0x00C9FD7C]\r\n\t(No symbol) [0x00C7641F]\r\n\t(No symbol) [0x00CA00D4]\r\n\t(No symbol) [0x00CB6B09]\r\n\t(No symbol) [0x00C9FB76]\r\n\t(No symbol) [0x00C749C1]\r\n\t(No symbol) [0x00C75E5D]\r\n\tGetHandleVerifier [0x0102A142+2497106]\r\n\tGetHandleVerifier [0x010585D3+2686691]\r\n\tGetHandleVerifier [0x0105BB9C+2700460]\r\n\tGetHandleVerifier [0x00E63B10+635936]\r\n\t(No symbol) [0x00D54A1F]\r\n\t(No symbol) [0x00D5A418]\r\n\t(No symbol) [0x00D5A505]\r\n\t(No symbol) [0x00D6508B]\r\n\tBaseThreadInitThunk [0x75C800F9+25]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7BBE+286]\r\n\tRtlGetAppContainerNamedObjectPath [0x775A7B8E+238]\r\n</p>",
+        "returnStepInfo": [null, null, null]
+    }
 ]

@@ -1,33 +1,38 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "format": "prettier .  --write"
-  },
-  "dependencies": {
-    "bulma": "^0.9.4",
-    "bulma-list": "^1.2.0",
-    "chart.js": "^4.2.1",
-    "socket.io": "^4.6.1",
-    "socket.io-client": "^4.6.1",
-    "vue": "^3.2.47",
-    "vue-chartjs": "^5.2.0",
-    "vue-socket.io": "^3.0.10"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "eslint": "^8.37.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-vue": "^9.10.0",
-    "node-sass": "^8.0.0",
-    "prettier": "2.8.7",
-    "sass": "^1.59.3",
-    "sass-loader": "^13.2.0",
-    "vite": "^4.1.4"
-  }
+    "name": "vue-project",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint:js": "eslint src --ext .ts,.vue,.js",
+        "format": "prettier .  --write"
+    },
+    "dependencies": {
+        "bulma": "^0.9.4",
+        "bulma-list": "^1.2.0",
+        "chart.js": "^4.2.1",
+        "socket.io": "^4.6.1",
+        "socket.io-client": "^4.6.1",
+        "vue": "^3.2.47",
+        "vue-chartjs": "^5.2.0",
+        "vue-socket.io": "^3.0.10"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.57.1",
+        "@typescript-eslint/parser": "^5.57.1",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vue/eslint-config-typescript": "^11.0.2",
+        "eslint": "^8.37.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.10.0",
+        "node-sass": "^8.0.0",
+        "prettier": "2.8.7",
+        "sass": "^1.59.3",
+        "sass-loader": "^13.2.0",
+        "vite": "^4.1.4",
+        "vue-eslint-parser": "^9.1.1"
+    }
 }
