@@ -1,20 +1,11 @@
 import { reactive } from 'vue'
 
-import fakeData from './fakeData.json'
+import fakeData from '../data/fakeData.json'
 
 export const storeSocket = reactive({
     percent: 0,
     message: '...',
     cible: 'UNKNOW',
-    setPercent(percent) {
-        this.percent = percent
-    },
-    setMessage(message) {
-        this.message = message
-    },
-    setCible(cible) {
-        this.cible = cible
-    },
     setFromJson(json) {
         this.percent = json.percent
         this.message = json.message
