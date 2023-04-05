@@ -1,17 +1,23 @@
 <template>
   <div class="box mt-6 has-text-left">
-    <p class="title has-text-centered">Resultat Squash QUAL BJN <button class="button is-warning"
-        @click="updateInfoSquashTests()" id="buttonToUpdateInfoSquashTests">Update</button></p>
+    <p class="title has-text-centered">
+      Resultat Squash QUAL BJN
+      <button
+        class="button is-warning"
+        @click="updateInfoSquashTests()"
+        id="buttonToUpdateInfoSquashTests"
+      >
+        Update
+      </button>
+    </p>
 
     <div class="columns">
-      <div class="column ">
+      <div class="column">
         <Pie :data="data" :options="options" />
       </div>
-
     </div>
 
     <aside class="menu">
-
       <div v-for="(app, indexApp) in dataBrut.globalTreeInfo">
         <p class="menu-label">
           <span class="tag is-success m-1">{{ app.SUCCESS }}</span>
@@ -26,22 +32,63 @@
         </p>
         <ul class="menu-list">
           <li v-for="(ts, indexTS) in app.test_suites">
-            <a :id="'section_' + indexApp + '_' + indexTS + '_title'"
-              @click="changeVisibilityContent('section_' + indexApp + '_' + indexTS + '_content')">
-              <span class="tag is-success m-1" :class="{ 'is-hidden': ts.SUCCESS === 0 }">{{ ts.SUCCESS }}</span>
-              <span class="tag is-danger m-1" :class="{ 'is-hidden': ts.FAILURE === 0 }">{{ ts.FAILURE }}</span>
-              <span class="tag is-dark m-1" :class="{ 'is-hidden': ts.UNTESTABLE === 0 }">{{ ts.UNTESTABLE }}</span>
-              <span class="tag is-info m-1" :class="{ 'is-hidden': ts.UNKNOW === 0 }">{{ ts.UNKNOW }}</span>
+            <a
+              :id="'section_' + indexApp + '_' + indexTS + '_title'"
+              @click="
+                changeVisibilityContent(
+                  'section_' + indexApp + '_' + indexTS + '_content'
+                )
+              "
+            >
+              <span
+                class="tag is-success m-1"
+                :class="{ 'is-hidden': ts.SUCCESS === 0 }"
+                >{{ ts.SUCCESS }}</span
+              >
+              <span
+                class="tag is-danger m-1"
+                :class="{ 'is-hidden': ts.FAILURE === 0 }"
+                >{{ ts.FAILURE }}</span
+              >
+              <span
+                class="tag is-dark m-1"
+                :class="{ 'is-hidden': ts.UNTESTABLE === 0 }"
+                >{{ ts.UNTESTABLE }}</span
+              >
+              <span
+                class="tag is-info m-1"
+                :class="{ 'is-hidden': ts.UNKNOW === 0 }"
+                >{{ ts.UNKNOW }}</span
+              >
               -
               {{ ts.name }}
             </a>
-            <ul :id="'section_' + indexApp + '_' + indexTS + '_content'" class="is-hidden">
+            <ul
+              :id="'section_' + indexApp + '_' + indexTS + '_content'"
+              class="is-hidden"
+            >
               <li v-for="tp in ts.test_plan">
-                <a :href="'https://testmanagement.factory.orange-business.com/squash/test-case-workspace/test-case/' + tp.id + '/content'"
-                  target="_blank">
-                  <span class="tag m-1 has-text-white"
-                    :class="{ 'has-background-success': tp.status === 'SUCCESS', 'has-background-danger': tp.status === 'FAILURE', 'has-background-dark': tp.status === 'UNTESTABLE', 'has-background-info': tp.status !== 'SUCCESS' && tp.status !== 'FAILURE' && tp.status !== 'UNTESTABLE' }">{{
-                      tp.status }}</span>
+                <a
+                  :href="
+                    'https://testmanagement.factory.orange-business.com/squash/test-case-workspace/test-case/' +
+                    tp.id +
+                    '/content'
+                  "
+                  target="_blank"
+                >
+                  <span
+                    class="tag m-1 has-text-white"
+                    :class="{
+                      'has-background-success': tp.status === 'SUCCESS',
+                      'has-background-danger': tp.status === 'FAILURE',
+                      'has-background-dark': tp.status === 'UNTESTABLE',
+                      'has-background-info':
+                        tp.status !== 'SUCCESS' &&
+                        tp.status !== 'FAILURE' &&
+                        tp.status !== 'UNTESTABLE',
+                    }"
+                    >{{ tp.status }}</span
+                  >
                   -
                   {{ tp.name }}
                 </a>
@@ -51,23 +98,22 @@
         </ul>
       </div>
     </aside>
-
   </div>
 </template>
 
 <script>
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import { Pie } from 'vue-chartjs'
-import { options } from '../config/chartConfig'
-import { storeGraph as store } from '../services/store'
-import fakeData from '../data/fakeDataInfosSquashTest.json'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "vue-chartjs";
+import { options } from "../config/chartConfig";
+import { storeGraph as store } from "../services/store";
+import fakeData from "../data/fakeDataInfosSquashTest.json";
 
-ChartJS.register(ArcElement, Tooltip, Legend)
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Pie
+    Pie,
   },
   data() {
     return {
@@ -76,74 +122,84 @@ export default {
       fakeData,
       dataBrut: { totalCount: {}, globalTreeInfo: [], lastExecutions: [] },
       data: {
-        labels: [
-          `Fail : -%`,
-          `Success : -%`,
-          `Untestable : -%`,
-          `Unknow : -%`,
-        ],
+        labels: [`Fail : -%`, `Success : -%`, `Untestable : -%`, `Unknow : -%`],
         datasets: [
           {
             backgroundColor: [
-              'rgb(241 70 104)',
-              'rgb(72 199 142)',
-              'rgb(33,37,41)',
-              'rgb(62 142 208)',
+              "rgb(241 70 104)",
+              "rgb(72 199 142)",
+              "rgb(33,37,41)",
+              "rgb(62 142 208)",
             ],
-            data: [25, 25, 25, 25]
-          }
-        ]
-      }
-    }
+            data: [25, 25, 25, 25],
+          },
+        ],
+      },
+    };
   },
   mounted() {
-    this.updateInfoSquashTests()
+    this.updateInfoSquashTests();
   },
   methods: {
     updateGraph(totalCount) {
       this.data = {
         labels: [
-          `Fail : ${Math.floor((totalCount.FAILURE * 100) / totalCount.TOTAL)}%`,
-          `Success : ${Math.floor((totalCount.SUCCESS * 100) / totalCount.TOTAL)}%`,
-          `Untestable : ${Math.floor((totalCount.UNTESTABLE * 100) / totalCount.TOTAL)}%`,
-          `Unknow : ${Math.floor((totalCount.UNKNOW * 100) / totalCount.TOTAL)}%`,
+          `Fail : ${Math.floor(
+            (totalCount.FAILURE * 100) / totalCount.TOTAL
+          )}%`,
+          `Success : ${Math.floor(
+            (totalCount.SUCCESS * 100) / totalCount.TOTAL
+          )}%`,
+          `Untestable : ${Math.floor(
+            (totalCount.UNTESTABLE * 100) / totalCount.TOTAL
+          )}%`,
+          `Unknow : ${Math.floor(
+            (totalCount.UNKNOW * 100) / totalCount.TOTAL
+          )}%`,
         ],
         datasets: [
           {
             backgroundColor: [
-              'rgb(241 70 104)',
-              'rgb(72 199 142)',
-              'rgb(33,37,41)',
-              'rgb(62 142 208)',
+              "rgb(241 70 104)",
+              "rgb(72 199 142)",
+              "rgb(33,37,41)",
+              "rgb(62 142 208)",
             ],
-            data: [totalCount.FAILURE, totalCount.SUCCESS, totalCount.UNTESTABLE, totalCount.UNKNOW]
-          }
-        ]
-      }
+            data: [
+              totalCount.FAILURE,
+              totalCount.SUCCESS,
+              totalCount.UNTESTABLE,
+              totalCount.UNKNOW,
+            ],
+          },
+        ],
+      };
     },
     updateInfoSquashTests() {
-      const button = document.getElementById("buttonToUpdateInfoSquashTests")
-      button.classList.add('is-loading')
-      fetch('http://localhost:3001/api/squash/tests/status')
-        .then(res => { return res.json() })
-        .then(res => {
-          this.dataBrut = res
-          this.updateGraph(this.dataBrut.totalCount)
-          button.classList.remove('is-loading')
-        }).catch(err=>{
-          console.error(err)
-          button.classList.remove('is-loading')
+      const button = document.getElementById("buttonToUpdateInfoSquashTests");
+      button.classList.add("is-loading");
+      fetch("http://localhost:3001/api/squash/tests/status")
+        .then((res) => {
+          return res.json();
         })
+        .then((res) => {
+          this.dataBrut = res;
+          this.updateGraph(this.dataBrut.totalCount);
+          button.classList.remove("is-loading");
+        })
+        .catch((err) => {
+          console.error(err);
+          button.classList.remove("is-loading");
+        });
     },
     changeVisibilityContent(idContent) {
-      const content = document.getElementById(idContent)
-      if (content.classList.contains('is-hidden')) {
-        content.classList.remove('is-hidden')
+      const content = document.getElementById(idContent);
+      if (content.classList.contains("is-hidden")) {
+        content.classList.remove("is-hidden");
       } else {
-        content.classList.add('is-hidden')
+        content.classList.add("is-hidden");
       }
-    }
-  }
-}
-
+    },
+  },
+};
 </script>
