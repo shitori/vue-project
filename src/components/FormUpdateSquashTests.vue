@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { storeResult as store, storeVisibility as componentsVisibility } from "../services/store"
 export default {
     data() {
@@ -35,7 +35,6 @@ export default {
                 method: "POST",
                 body: formData,
             })
-                //fetch('http://localhost:3001/api/test')
                 .then((res) => {
                     return res.json()
                 })

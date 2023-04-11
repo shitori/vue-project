@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
 import { storeResult as store, storeVisibility as componentsVisibility } from "../services/store"
-import { FAILURE, SUCCESS } from "../interfaces/interfaceStutusTestSquash"
+import EnumTypeStatus from "../interfaces/EnumTypeStatus"
+
 export default {
     data() {
         return {
             store,
-            typeStatusSquash: { FAILURE, SUCCESS },
+            EnumTypeStatus,
         }
     },
     methods: {
@@ -38,8 +39,8 @@ export default {
                 class="card m-1 column is-one-quarter"
                 style="width: 20rem"
                 :class="{
-                    'has-background-success': result.status === typeStatusSquash.SUCCESS,
-                    'has-background-danger': result.status === typeStatusSquash.FAILURE,
+                    'has-background-success': result.status === EnumTypeStatus.SUCCESS,
+                    'has-background-danger': result.status === EnumTypeStatus.FAILURE,
                 }"
             >
                 <a target="_blank" class="is-link" :href="'https://testmanagement.factory.orange-business.com/squash/test-case-workspace/test-case/' + result.realId + '/content'">

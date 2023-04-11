@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import FormUpdateSquashTests from "./components/FormUpdateSquashTests.vue"
 import LoadingScreenUpdateSquashTests from "./components/LoadingScreenUpdateSquashTests.vue"
 import ResultUpdateSquashTests from "./components/ResultUpdateSquashTests.vue"
@@ -6,6 +6,7 @@ import InfoSquashTests from "./components/InfoSquashTests.vue"
 import SocketioService from "./services/socket"
 import { storeVisibility as store } from "./services/store"
 export default {
+    name: "App",
     components: {
         FormUpdateSquashTests,
         LoadingScreenUpdateSquashTests,

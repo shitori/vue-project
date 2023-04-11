@@ -1,15 +1,17 @@
 import { reactive } from "vue"
 
 import fakeData from "../data/fakeData.json"
+import EnumCibleWS from "../interfaces/EnumCible"
+import SocketJSONcontentType from "../types/SocketJSONcontentType"
 
 export const storeSocket = reactive({
-    percent: 0,
-    message: "...",
-    cible: "UNKNOW",
-    setMessage(message) {
+    percent: 0 as number,
+    message: "..." as string,
+    cible: EnumCibleWS.FROM_RF as EnumCibleWS,
+    setMessage(message: string) {
         this.message = message
     },
-    setFromJson(json) {
+    setFromJson(json: SocketJSONcontentType) {
         this.percent = json.percent
         this.message = json.message
         this.cible = json.cible
@@ -28,31 +30,16 @@ export const storeResult = reactive({
 })
 
 export const storeVisibility = reactive({
-    formUST: true,
-    loadUST: false,
-    resultUST: false,
-    setFormUST(formUST) {
+    formUST: true as boolean,
+    loadUST: false as boolean,
+    resultUST: false as boolean,
+    setFormUST(formUST: boolean) {
         this.formUST = formUST
     },
-    setloadUST(loadUST) {
+    setloadUST(loadUST: boolean) {
         this.loadUST = loadUST
     },
-    setResultUST(resultUST) {
+    setResultUST(resultUST: boolean) {
         this.resultUST = resultUST
-    },
-})
-
-export const storeGraph = reactive({
-    totalFail: 0,
-    totalSucess: 0,
-    totalUntestable: 0,
-    totalUnknow: 0,
-    total: 0,
-    setFromJson(json) {
-        this.totalFail = json.FAILURE
-        this.totalSucess = json.SUCCESS
-        this.totalUntestable = json.UNTESTABLE
-        this.totalUnknow = json.UNKNOW
-        this.total = json.TOTAL
     },
 })

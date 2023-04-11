@@ -40,10 +40,10 @@
                                     <span
                                         class="tag m-1 has-text-white"
                                         :class="{
-                                            'has-background-success': tp.status === 'SUCCESS',
-                                            'has-background-danger': tp.status === 'FAILURE',
-                                            'has-background-dark': tp.status === 'UNTESTABLE',
-                                            'has-background-info': tp.status !== 'SUCCESS' && tp.status !== 'FAILURE' && tp.status !== 'UNTESTABLE',
+                                            'has-background-success': tp.status === EnumTypeStatus.SUCCESS,
+                                            'has-background-danger': tp.status === EnumTypeStatus.FAILURE,
+                                            'has-background-dark': tp.status === EnumTypeStatus.UNTESTABLE,
+                                            'has-background-info': tp.status !== EnumTypeStatus.SUCCESS && tp.status !== EnumTypeStatus.FAILURE && tp.status !== EnumTypeStatus.UNTESTABLE,
                                         }"
                                         >{{ tp.status }}</span
                                     >
@@ -59,12 +59,12 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js"
 import { Pie } from "vue-chartjs"
 import { options } from "../config/chartConfig"
-import { storeGraph as store } from "../services/store"
-import fakeData from "../data/fakeDataInfosSquashTest.json"
+import AppSquashType from "../types/AppSquashType"
+import EnumTypeStatus from "../interfaces/EnumTypeStatus"
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -76,9 +76,8 @@ export default {
     data() {
         return {
             options,
-            store,
-            fakeData,
-            dataBrut: { totalCount: {}, globalTreeInfo: [], lastExecutions: [] },
+            EnumTypeStatus,
+            dataBrut: { totalCount: {}, globalTreeInfo: [] as Array<AppSquashType>, lastExecutions: [] },
             data: {
                 labels: [`Fail : -%`, `Success : -%`, `Untestable : -%`, `Unknow : -%`],
                 datasets: [
@@ -112,7 +111,10 @@ export default {
         },
         updateInfoSquashTests() {
             const button = document.getElementById("buttonToUpdateInfoSquashTests")
-            button.classList.add("is-loading")
+            if (button !== null) {
+                button.classList.add("is-loading")
+            }
+
             fetch("http://localhost:3001/api/squash/tests/status")
                 .then((res) => {
                     return res.json()
@@ -120,19 +122,24 @@ export default {
                 .then((res) => {
                     this.dataBrut = res
                     this.updateGraph(this.dataBrut.totalCount)
-                    button.classList.remove("is-loading")
                 })
                 .catch((err) => {
                     console.error(err)
-                    button.classList.remove("is-loading")
+                })
+                .finally(() => {
+                    if (button !== null) {
+                        button.classList.remove("is-loading")
+                    }
                 })
         },
         changeVisibilityContent(idContent) {
             const content = document.getElementById(idContent)
-            if (content.classList.contains("is-hidden")) {
-                content.classList.remove("is-hidden")
-            } else {
-                content.classList.add("is-hidden")
+            if (content !== null) {
+                if (content.classList.contains("is-hidden")) {
+                    content.classList.remove("is-hidden")
+                } else {
+                    content.classList.add("is-hidden")
+                }
             }
         },
     },
