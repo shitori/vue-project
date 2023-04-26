@@ -50,6 +50,13 @@ export default {
 
         <ResultUpdateSquashTests :class="{ 'is-hidden': !store.resultUST }" />
 
-        <InfoSquashTests />
+        <div class="columns">
+            <div class="column">
+                <InfoSquashTests :is-ngp="false" sub-name="BJN" />
+            </div>
+            <div class="column">
+                <InfoSquashTests :is-ngp="true" sub-name="NGP" />
+            </div>
+        </div>
     </main>
 </template>

@@ -25,3 +25,9 @@ export default {
         <button class="button is-danger is-outlined is-medium m-1" @click="resetComponentVisibility()">Annuler</button>
     </div>
 </template>
+
+<style scoped>
+.progress::-webkit-progress-value {
+    transition: width 0.5s ease;
+}
+</style>

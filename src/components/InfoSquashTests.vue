@@ -1,7 +1,9 @@
 <template>
     <div class="box mt-6 has-text-left">
         <p class="title has-text-centered">
-            Resultat Squash QUAL BJN
+            Resultat Squash QUAL
+            <span v-if="isNgp">NGP </span>
+            <span v-else>BJN </span>
             <button id="buttonToUpdateInfoSquashTests" class="button is-warning" @click="updateInfoSquashTests()">Update</button>
         </p>
 
@@ -26,7 +28,7 @@
                 </p>
                 <ul class="menu-list">
                     <li v-for="(ts, indexTS) in app.test_suites" :key="indexTS">
-                        <a :id="'section_' + indexApp + '_' + indexTS + '_title'" @click="changeVisibilityContent('section_' + indexApp + '_' + indexTS + '_content')">
+                        <a :id="'section_' + indexApp + '_' + indexTS + '_title' + this.subName" @click="changeVisibilityContent('section_' + indexApp + '_' + indexTS + '_content' + this.subName)">
                             <span class="tag is-success m-1" :class="{ 'is-hidden': ts.SUCCESS === 0 }">{{ ts.SUCCESS }}</span>
                             <span class="tag is-danger m-1" :class="{ 'is-hidden': ts.FAILURE === 0 }">{{ ts.FAILURE }}</span>
                             <span class="tag is-dark m-1" :class="{ 'is-hidden': ts.UNTESTABLE === 0 }">{{ ts.UNTESTABLE }}</span>
@@ -34,7 +36,7 @@
                             -
                             {{ ts.name }}
                         </a>
-                        <ul :id="'section_' + indexApp + '_' + indexTS + '_content'" class="is-hidden">
+                        <ul :id="'section_' + indexApp + '_' + indexTS + '_content' + this.subName" class="is-hidden">
                             <li v-for="tp in ts.test_plan" :key="tp.id">
                                 <a :href="'https://testmanagement.factory.orange-business.com/squash/test-case-workspace/test-case/' + tp.id + '/content'" target="_blank">
                                     <span
@@ -69,6 +71,16 @@ import EnumTypeStatus from "../interfaces/EnumTypeStatus"
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 export default {
+    props: {
+        isNgp: {
+            type: Boolean,
+            required: true,
+        },
+        subName: {
+            type: String,
+            required: true,
+        },
+    },
     name: "App",
     components: {
         Pie,
@@ -114,8 +126,11 @@ export default {
             if (button !== null) {
                 button.classList.add("is-loading")
             }
-
-            fetch("http://localhost:3001/api/squash/tests/status")
+            let currentURL = "http://localhost:3001/api/squash/tests/status"
+            if (this.isNgp) {
+                currentURL += "?isNGP=true"
+            }
+            fetch(currentURL)
                 .then((res) => {
                     return res.json()
                 })
